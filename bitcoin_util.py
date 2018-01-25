@@ -86,26 +86,26 @@ def getCommandLineArgs(printHelp=False):
 	parser = OptionParser(add_help_option=False)
 
 	parser.add_option(
-						"--seed",
-						help="Specify the seed value for private key creation (Default: DEADBEEF)",
-						default=None,
-						action="store",
-						dest="seed")
+			"--seed",
+			help="Specify the seed value for private key creation (Default: DEADBEEF)",
+			default=None,
+			action="store",
+			dest="seed")
 
 	parser.add_option(
-						"--version",
-						help="Specify the hex version value (Default: 0x00)",
-						default=None,
-						type=int,
-						action="store",
-						dest="version")
+			"--version",
+			help="Specify the hex version value (Default: 0x00)",
+			default=None,
+			type=int,
+			action="store",
+			dest="version")
 
 	parser.add_option(
-						"-h", "--help",
-						help="Display this help message",
-						default=False,
-						action="store_true",
-						dest="printHelp")
+			"-h", "--help",
+			help="Display this help message",
+			default=False,
+			action="store_true",
+			dest="printHelp")
 
 	optsAndArgs = parser.parse_args()
 
